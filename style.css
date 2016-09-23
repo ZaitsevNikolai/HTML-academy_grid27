@@ -12,69 +12,72 @@ body {
     color: white;
 }
 
-.clearfix::after {
-    content: "";
+.layout-positioner {
+    width: 350px;
+    margin: auto;
+}
+
+.layout-positioner::after {
     display: table;
+    content: "";
     clear: both;
 }
 
-.back-header1 {
-    width: 450px;
-    min-height: 55px;
-    background-color: #34495e;
+.wrapper {
+    width: 350px;
+    margin: 0 auto;
+    box-shadow: 0 0 2px #cccccc;
 }
 
 .header {
+    min-height: 5px;
+    background-color: #34495e;
+    padding: 10px 0 10px 0;
+}
+
+.header-column1 {
     float: left;
     width: 340px;
-    height: 25px;
+    min-height: 25px;
     background-color: #c0392b;
     padding: 5px;
-    margin-left: 50px;
-    margin-top: 10px;
-    
 }
 
 .menu {
-    width: 395px;
     height: 30px;
     background-color: #3498DB;
     padding-top: 5px;
-    padding-left: 55px;
+    padding-left: 10px;
 }
 
-.back-header2 {
-    width: 430px;
+.header2 {
     min-height: 55px;
     background-color: #34495e;
-    padding: 10px;
+    padding: 10px 0 10px 0;
 }
 
 .column-promo1 {
     float: left;
     width: 160px;
     height: 50px;
-    padding: 5px;
-    background-color: #c0392b;
     margin-right: 10px;
-    margin-left: 40px;
+    background-color: #c0392b;   
+    padding: 5px;
 }
 
 .column-promo2 {
-    float: left;
+    float: right;
     width: 160px;
     height: 50px;
+    margin-right: 0px;
+    background-color: #c0392b;   
     padding: 5px;
-    background-color: #c0392b;
 }
 
 .main {
-    width: 400px;
     min-height: 100px;
     background-color: white;
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
 }
 
 .column-left {
@@ -96,7 +99,7 @@ body {
 }
 
 .column-right {
-    float: left;
+    float: right;
     width: 60px;
     height: 100px;
     padding: 5px;
@@ -105,16 +108,8 @@ body {
 }
 
 .footer {
-    width: 395px;
     min-height: 55px;
     background-color: #34495e;
     padding-top: 5px;
-    padding-left: 55px;
+    padding-left: 10px;
 }
-
-/*
-    Используемые цвета:
-    #34495e – мокрый асфальт
-    #c0392b – красный
-    #3498DB – синий
-*/
