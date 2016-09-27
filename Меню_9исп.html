@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Испытание: вертикальное меню</title>
+    </head>
+    <body>
+        <ul class="menu">
+        <li>Курсы</li>
+        <li class="active">Демонстрации</li>
+        <li>Участники</li>
+        <li>Достижения</li>
+        <li>Профиль</li>
+        </ul>
+    </body>
+</html>
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 280px;
+    min-height: 280px;
+    padding: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background: #ecf0f1;
+}
+
+.menu {
+    margin-top: 14px;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+.menu li {
+    width: 170px;
+    float: left;
+    padding: 10px 15px;
+    border-bottom: 2px solid #2c3e50;
+    color: #ffffff;
+    background-color: #2980b9;    
+}
+
+.menu .active {
+    background-color: #1abc9c;
+    border-bottom: 2px solid #2ecc71;    
+}
